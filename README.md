@@ -7,4 +7,4 @@
 
 
 ##Link para página
-https://microelectronic-sch.000webhostapp.com/cadastro.html
+https://microelectronic-sch.000webhostapp.com/index.html
