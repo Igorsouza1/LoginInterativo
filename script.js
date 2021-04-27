@@ -3,6 +3,9 @@ let validadorJs = {
         event.preventDefault();
         let send = true;
         let inputs = form.querySelectorAll('input');
+
+        validadorJs.clearErrors();
+
         for(let i=0;i<inputs.length;i++){
             let input = inputs[i];
             let check = validadorJs.checkInput(input);
@@ -45,6 +48,12 @@ let validadorJs = {
         errorElement.innerHTML = error;
 
         input.parentElement.insertBefore(errorElement, input);
+    },
+    clearErrors:() => {
+        let errorElement = document.querySelectorAll('.error');
+        for(let i = 0; i < errorElement.length; i++){
+            errorElement[i].remove();
+        }
     }
     
 }
