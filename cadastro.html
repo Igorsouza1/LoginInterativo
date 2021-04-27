@@ -17,25 +17,26 @@
                 <h1>Cadastro</h1>
                 <img id="img-cadastro2" width="90px" src="./images/subscribe_vspl.svg" alt="Cadastro">
             </div>
-            <div class="cadastro">
+            <form method="POST" class="cadastro validadorJs">
                 <label for="nome">Nome:</label>
-                <input class="input-login" type="text" name="nome" placeholder="Nome">
+                <input class="input-login" type="text" name="nome" placeholder="Nome" data-rules="required">
                 <label for="email">E-mail</label>
-                <input class="input-login" type="email" name="email" placeholder="E-mail">
+                <input class="input-login" type="email" name="email" placeholder="E-mail" data-rules="required">
                 <label for="email">Data de Nascimento:</label>
                 <input class="input-login" type="date" name="nasci">
                 <label for="email">Senha:</label>
-                <input class="input-login" type="password" name="senha" placeholder="Senha">
+                <input class="input-login" type="password" name="senha" placeholder="Senha" data-rules="required">
                 <label for="email">Confirmar senha:</label>
-                <input class="input-login" type="password" name="senha" placeholder="Confirmação de senha">
+                <input class="input-login" type="password" name="senha" placeholder="Confirmação de senha" data-rules="required">
                 <div id="termosDeUso">
-                <input type="checkbox" name="termos"value="termosDeUso">
+                <input type="checkbox" name="termos"value="termosDeUso" data-rules="required">
                 <label for="termos" name="aceitarTermos">Eu aceito os <a href="">termos de uso</a></label>
                 </div>
-                <input class="button" type="button" value="Cadastrar">
-            </div>
+                <input class="button" type="submit" value="Cadastrar">
+            </form>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
